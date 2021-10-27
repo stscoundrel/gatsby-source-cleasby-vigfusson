@@ -1,13 +1,20 @@
 {
-  "name": "typescript-template",
+  "name": "gatsby-source-cleasby-vigfusson",
   "version": "1.0.0",
-  "description": "Template repo for generic TypeScript /  Node.js library with tests & lint",
-  "repository": "https://github.com/stscoundrel/typescript-template.git",
+  "description": "Gatsby Source plugin for Cleasby & Vigfusson dictionary.",
+  "repository": "https://github.com/stscoundrel/gatsby-source-cleasby-vigfusson.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "old-norse",
+    "cleasby-vigfusson"
+  ],
+  "main": "dist/gatsby-node.js",
+  "types": "dist/gatsby-node.d.ts",
   "files": [
     "dist"
   ],
