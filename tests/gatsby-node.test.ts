@@ -9,7 +9,7 @@ const actions = {
 
 describe('Gatsby Node hook tests', () => {
   test('Hook calls createNode for all dictionary entries (35207 times)', () => {
-    sourceNodes({ actions, createNodeId, createContentDigest });
+    sourceNodes({ actions, createNodeId, createContentDigest }, { noMarkup: false });
 
     // Main create action.
     expect(createNodeMock.mock.calls.length).toBe(35207);
