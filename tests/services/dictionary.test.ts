@@ -28,4 +28,17 @@ describe('Dictionary tests', () => {
 
     expect(slugs.size).toEqual(entries.length);
   });
+
+  test('Dictionary slugs do not start with dashes', () => {
+    entries.forEach((entry) => {
+      expect(entry.slug.charAt(0)).not.toEqual('-');
+    });
+  });
+
+  test('Dictionary contains expected content', () => {
+    expect(entries[1].word).toBe('abbadís');
+    expect(entries[1].slug).toBe('abbadis');
+    expect(entries[1].definitions[0]).toBe('f. <i>abbess.</i> Hkr. iii. 398, Fms. vii. 239, Gþl. 365.');
+    expect(entries[1].startsWith).toBe('A');
+  })
 });
