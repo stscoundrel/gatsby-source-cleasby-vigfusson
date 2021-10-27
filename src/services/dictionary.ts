@@ -1,4 +1,4 @@
-import { DictionaryEntry, getDictionary } from 'cleasby-vigfusson-dictionary';
+import { DictionaryEntry, getDictionary, getNoMarkupDictionary } from 'cleasby-vigfusson-dictionary';
 import slugify from 'slugify';
 
 export interface GatsbyDictionaryEntry extends DictionaryEntry {
@@ -33,9 +33,9 @@ function addSlugs(entries: GatsbyDictionaryEntry[]) : GatsbyDictionaryEntry[] {
   return formattedEntries;
 }
 
-export function getEntries() : GatsbyDictionaryEntry[] {
+export function getEntries(NoMarkupSetting: boolean) : GatsbyDictionaryEntry[] {
   const formattedEntries: GatsbyDictionaryEntry[] = [];
-  const entries = getDictionary();
+  const entries = NoMarkupSetting ? getNoMarkupDictionary() : getDictionary();
 
   entries.forEach((entry) => {
     formattedEntries.push({
