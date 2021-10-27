@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-cleasby-vigfusson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby Source plugin for Cleasby & Vigfusson dictionary.",
   "repository": "https://github.com/stscoundrel/gatsby-source-cleasby-vigfusson.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
@@ -16,7 +16,8 @@
   "main": "dist/gatsby-node.js",
   "types": "dist/gatsby-node.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "gatsby-node.js"
   ],
   "engines": {
     "node": ">=12.0.0"
