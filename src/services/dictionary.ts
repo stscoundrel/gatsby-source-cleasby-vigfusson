@@ -41,7 +41,7 @@ export function getEntries() : GatsbyDictionaryEntry[] {
     formattedEntries.push({
       ...entry,
       slug: '',
-      startsWith: entry.word.charAt(0),
+      startsWith: entry.word.charAt(0).toUpperCase(),
     });
   });
 
