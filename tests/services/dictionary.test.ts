@@ -40,5 +40,5 @@ describe('Dictionary tests', () => {
     expect(entries[1].slug).toBe('abbadis');
     expect(entries[1].definitions[0]).toBe('f. <i>abbess.</i> Hkr. iii. 398, Fms. vii. 239, Gþl. 365.');
     expect(entries[1].startsWith).toBe('A');
-  })
+  });
 });
