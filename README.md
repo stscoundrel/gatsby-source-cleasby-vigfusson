@@ -21,12 +21,30 @@ The plugin adds new `dictionaryEntry` type into datalayer. Individual entries ar
 
 
 To use the plugin in your Gatsby project, just add it to plugins config:
+
 ```javascript
 // gatsby-config.js
 module.exports {
   // Your other configs.
   plugins: [
     "gatsby-source-cleasby-vigfusson"
+  ]
+}
+```
+
+If you're using default settings, dictionary entries will contain HTML markup like `<strong>` and `<i>` tags. If you wish to get dictionary data without any markup, you can register the plugin with custom settings.
+
+```javascript
+// gatsby-config.js
+module.exports {
+  // Your other configs.
+  plugins: [
+    {
+      resolve: "gatsby-source-cleasby-vigfusson",
+      options: {
+        noMarkup: true,
+      }
+    }
   ]
 }
 ```
