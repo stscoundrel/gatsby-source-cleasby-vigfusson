@@ -1,8 +1,36 @@
 import { DictionaryEntry, getDictionary } from 'cleasby-vigfusson-dictionary';
+import slugify from 'slugify';
 
 interface GatsbyDictionaryEntry extends DictionaryEntry {
   slug: string;
   startsWith: string;
+}
+
+function addSlugs(entries: GatsbyDictionaryEntry[]) : GatsbyDictionaryEntry[] {
+  const existingSlugs = {};
+
+  const formattedEntries = entries.map((entry) => {
+    let slug = slugify(entry.word).toLowerCase();
+
+    if (slug.charAt(0) === '-') {
+      slug = slug.substring(1);
+    }
+
+    if (existingSlugs[slug]) {
+      // Double slug, make unique.
+      existingSlugs[slug] += 1;
+      slug = `${slug}-${existingSlugs[slug]}`;
+    } else {
+      existingSlugs[slug] = 1;
+    }
+
+    return {
+      ...entry,
+      slug,
+    };
+  });
+
+  return formattedEntries;
 }
 
 export function getEntries() : GatsbyDictionaryEntry[] {
@@ -12,12 +40,14 @@ export function getEntries() : GatsbyDictionaryEntry[] {
   entries.forEach((entry) => {
     formattedEntries.push({
       ...entry,
-      slug: 'test',
+      slug: '',
       startsWith: entry.word.charAt(0),
     });
   });
 
-  return formattedEntries;
+  const entriesWithSlugs = addSlugs(formattedEntries);
+
+  return entriesWithSlugs;
 }
 
 export default {

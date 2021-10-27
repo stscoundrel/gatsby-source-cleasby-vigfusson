@@ -15,7 +15,8 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "cleasby-vigfusson-dictionary": "^1.0.12"
+    "cleasby-vigfusson-dictionary": "^1.0.12",
+    "slugify": "^1.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
