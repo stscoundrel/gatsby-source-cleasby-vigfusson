@@ -1,7 +1,7 @@
 import { DictionaryEntry, getDictionary } from 'cleasby-vigfusson-dictionary';
 import slugify from 'slugify';
 
-interface GatsbyDictionaryEntry extends DictionaryEntry {
+export interface GatsbyDictionaryEntry extends DictionaryEntry {
   slug: string;
   startsWith: string;
 }
