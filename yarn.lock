@@ -2768,9 +2768,9 @@ functional-red-black-tree@^1.0.1:
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
 gatsby-plugin-utils@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-2.2.0.tgz#87690d8031fc23454c05bae4b8c81c8db67d362e"
-  integrity sha512-VcrvYk6LxsTs7DqzNCT7iYaqEoMuKr2gXO5HFG1sBMwS6XxLWUe47+CuenOvUcKn71C9a/Ir2pove62+0Xphjw==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-2.4.0.tgz#392e4a7706f8ee67067fddd86fba8510e1d85f79"
+  integrity sha512-0+hN/Rfq7J+SwZZ2j+Sc9WiNd8XequDoM389/ORFTE82GXtPHDWtMV1LIF6yg/SkdANzChLUW9Eo/edgLiOOHA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     joi "^17.4.2"
