@@ -16,6 +16,8 @@ The plugin adds new `dictionaryEntry` type into datalayer. Individual entries ar
 {
     word: String
     definitions: [String]
+    slug: String (=slugified, unique headword)
+    startsWith: String (=one uppercase letter)
 }
 ```
 
