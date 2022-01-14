@@ -8,7 +8,7 @@ interface PluginOptions {
 /**
  * Main Gatsby hook for creating nodes to datalayer.
  */
-exports.sourceNodes = (
+export const sourceNodes = (
   { actions, createNodeId, createContentDigest },
   pluginOptions: PluginOptions,
 ) => {
@@ -25,7 +25,7 @@ exports.sourceNodes = (
 /**
  * Plugin option validation.
  */
-exports.pluginOptionsSchema = ({ Joi }) => Joi.object({
+export const pluginOptionsSchema = ({ Joi }) => Joi.object({
   noMarkup: Joi
     .boolean()
     .default(false)
