@@ -16,7 +16,6 @@ describe('Plugin options', () => {
     expect(isValid).toBe(false);
     expect(errors).toEqual([
       '"noMarkup" must be a boolean',
-      '"random" is not allowed',
     ]);
   });
 
