@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-cleasby-vigfusson",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Gatsby Source plugin for Cleasby & Vigfusson dictionary.",
   "repository": "https://github.com/stscoundrel/gatsby-source-cleasby-vigfusson.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
