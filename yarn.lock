@@ -2779,9 +2779,9 @@ cjs-module-lexer@^1.0.0:
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
 cleasby-vigfusson-dictionary@^1.0.12:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/cleasby-vigfusson-dictionary/-/cleasby-vigfusson-dictionary-1.0.13.tgz#033d8ed6255a88ff85675bea4ab9d4f7909e2f73"
-  integrity sha512-vzfC25TGNW8j8MLOyJ5oSHz9Luf7AsuwbQ/x0nx4GCY1HHgcP7+1miYC4/9mDbyySQ+x8VIan1Ms6Oarf6uTtw==
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/cleasby-vigfusson-dictionary/-/cleasby-vigfusson-dictionary-1.0.15.tgz#f534bb115c7b38ae855df9e091beea95a603aad0"
+  integrity sha512-Bf+tyA3uy9G+QOfC1dZHVOflyfHyThERmOwNlu2kIzx001GfirRBAq5sMdFUGsZAiIYdq+CIXJiqbR1Wsd5wsw==
 
 cli-cursor@^4.0.0:
   version "4.0.0"
